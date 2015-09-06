@@ -4,18 +4,30 @@ text-align: center;
 }
 
 #menu {
-  height: 800px;
+  height: 730px;
   background: url("images/keyboard-453795_1280.jpg");
 }
 
 #page1 {
-  height: 800px;
+  background-color: lightgrey;
+  height: 730px;
 }
 
 #page2 {
-  height: 800px;
+  height: 730px;
   background: url("images/headphones-690685_1280.jpg");
 }
+
+#page3 {
+  background-color: lightgrey;
+  height: 730px;
+}
+
+#page4 {
+  height: 730px;
+  background: url("images/old-books-436498_1280.jpg");
+}
+
 .bmenu{
    padding: 50px 0px;
 	margin: 0 auto;
@@ -67,7 +79,6 @@ text-align: center;
 	text-shadow: 0px 0px 10px #fff;
 }
 
-
 .bmenu li a:hover{
 	text-shadow: none;
 	color: #fff;
@@ -76,4 +87,35 @@ text-align: center;
 	-o-transform: scale(1);
 	-webkit-transform: scale(1);
 	transform: scale(1);
+}
+
+.card-container {
+  height: 300px;
+  perspective: 600;
+  position: relative;
+  width: 300px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+
+#pic1{
+    width: 300px;
+    height: 300px;
 }
