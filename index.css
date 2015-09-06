@@ -1,14 +1,23 @@
-body {
-background: url("images/keyboard-453795_1280.jpg");
-}
-
 body h1 {
 color: aliceblue;
 text-align: center;
 }
 
+#menu {
+  height: 800px;
+  background: url("images/keyboard-453795_1280.jpg");
+}
+
+#page1 {
+  height: 800px;
+}
+
+#page2 {
+  height: 800px;
+  background: url("images/headphones-690685_1280.jpg");
+}
 .bmenu{
-   padding: 50px;
+   padding: 50px 0px;
 	margin: 0 auto;
 	position: relative;
 	background: rgba(0,0,0,0.7);
