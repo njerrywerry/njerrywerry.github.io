@@ -12,16 +12,18 @@
   </head>
 
   <body>
+      <!-- Menu -->
     <div class = "container-fluid" id = "menu">
         <h1>Sylvia Kieha</h1>
      <ul class="bmenu">
- 	<li><a href="#about">About</a></li>
- 	<li><a href="#portfolio">Portfolio</a></li>
- 	<li><a href="#resume">Resume</a></li>
- 	<li><a href="#contact">Contact Me</a></li>
+       <li><a href="#about">About</a></li>
+       	<li><a href="#portfolio">Portfolio</a></li>
+       	<li><a href="#resume">Resume</a></li>
+       	<li><a href="#contact">Contact Me</a></li>
  </ul>
  </div>
 
+  <!-- About -->
  <div class = "container-fluid" id = "page1">
 <a id = "about"></a>
 <h1 style = "color: black">About</h1>
@@ -30,9 +32,11 @@
 
  </div>
 
- <div class = "container-fluid" id = "page2">
+  <!-- Portfolio -->
+ <div class = "row" id = "page2">
    <a id = "portfolio"></a>
    <h1>Portfolio</h1>
+   <div class = "col-md-4">
    <div class="card-container">
           <div class="card">
             <div class="side">
@@ -46,8 +50,10 @@
             </div>
           </div>
        </div>
+     </div>
 
-   <div style="float: right" class="card-container">
+    <div class = "col-md-4">
+   <div class="card-container">
       <div class="card">
         <div class="side">
           <img id="pic1" src="images/html.png">
@@ -60,14 +66,33 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class = "col-md-4">
+ <div class="card-container">
+    <div class="card">
+      <div class="side">
+        <img id="pic1" src="images/ruby-on-rail.png">
+      </div>
+      <div class="side back">
+        <div class="card-header">Blog</div>
+        <p style="color: aliceblue">A blogging platform built using Ruby on Rails.<br>
+        <a href="##">View Website</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
  </div>
 
+  <!-- Resume -->
  <div class = "container-fluid" id = "page3">
    <a id = "resume"></a>
    <h1 style = "color: black">Resume</h1>
  </div>
 
+  <!--Contact -->
  <div class = "container-fluid" id = "page4">
    <a id = "contact"></a>
    <h1>Contact Me</h1>
