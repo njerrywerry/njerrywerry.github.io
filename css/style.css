@@ -19,6 +19,7 @@
     border-top:none;
 }
 .st-accordion ul li > a{
+	  color: aliceblue;
     font-family: 'Josefin Slab',Georgia, serif;
     text-shadow: 1px 1px 1px #fff;
     font-size: 46px;
@@ -49,14 +50,14 @@
 	transition:  all 0.2s ease-in-out;
 }
 .st-accordion ul li > a:hover{
-    color: #1693eb;
+    color: red;
 }
 .st-accordion ul li > a:hover span{
 	opacity:1;
 	right: 10px;
 }
 .st-accordion ul li.st-open > a{
-    color: #1693eb;
+    color: red;
 }
 .st-accordion ul li.st-open > a span{
 	-webkit-transform:rotate(180deg);
@@ -75,11 +76,7 @@
     line-height:  28px;
     padding: 0px 4px 15px 4px;
 }
-.st-content img{
-    width:125px;
-    border-right:1px solid #fff;
-    border-bottom:1px solid #fff;
-}
+
 @media screen and (max-width: 320px){
 	.st-accordion ul li > a{
 		font-size:36px;
