@@ -1,0 +1,55 @@
+body h1 {
+text-align: center;
+}
+
+#page1 {
+  background-color: lightgrey;
+}
+
+#page2 {
+  background: url("images/headphones-690685_1280.jpg");
+}
+
+#page3 {
+  background-color: lightgrey;
+}
+
+#page4 {
+  background: url("images/old-books-436498_1280.jpg");
+}
+
+.card-container {
+  height: 300px;
+  perspective: 600;
+  position: relative;
+  width: 300px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+
+#pic1{
+    width: 300px;
+    height: 300px;
+}
+
+#git {
+  width: 100px;
+  height: 100px;
+}

@@ -8,200 +8,106 @@
     <title>Sylvia Kieha</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
-      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" type="text/css" href="css/index.css">
+      <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<noscript>
+  <style>
+    .st-accordion ul li{
+      height:auto;
+    }
+    .st-accordion ul li > a span{
+      visibility:hidden;
+    }
+  </style>
+</noscript>
   </head>
 
   <body>
-    <div class = "container-fluid">
-        <!-- Menu -->
-      <div class = "row" id = "menu">
-        <h1>Sylvia Kieha</h1>
-     <ul class="bmenu">
-       <li><a href="#about">About</a></li>
-     	<li><a href="#portfolio">Portfolio</a></li>
-     	<li><a href="#resume">Resume</a></li>
-     	<li><a href="#contact">Contact Me</a></li>
- </ul>
- </div>
+   <div class="container">
+     <div>
+       <h1>Sylvia Kieha</h1>
+     </div>
+    <div class="wrapper">
+      <div id="st-accordion" class="st-accordion">
+        <ul>
+          <li>
+            <a href="#">About<span class="st-arrow">Open or Close</span></a>
+              <div class="st-content" id = "page1">
+                <p></p>
+              </div>
+          </li>
+          <li>
+            <a href="#">Portfolio<span class="st-arrow">Open or Close</span></a>
+              <div class="st-content" id = "page2">
+                <div class="card-container">
+                  <div class="card">
+                    <div class="side">
+                      <img id="pic1" src="images/ruby-on-rails-logo.jpg">
+                    </div>
+                    <div class="side back">
+                      <div class="card-header">Makazi</div>
+                        <p>Makazi is an application built on the Ruby on Rails framework.<br>
+                        <a href="http://makazi.herokuapp.com">View Website</a>
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </li>
+          <li>
+              <a href="#">Resume<span class="st-arrow">Open or Close</span></a>
+              <div class="st-content" id = "page3">
 
-  <!-- About -->
- <div class = "row" id = "page1">
-<a id = "about"></a>
-<h1 style = "color: black">About</h1>
-<p style = "text-align: center"><a href="#">Home</a></p>
-<p></p>
+              </div>
+          </li>
+          <li>
+              <a href="#">Contact Me<span class="st-arrow">Open or Close</span></a>
+              <div class="st-content" id = "page4">
+                 <p style = "text-align: center">Drop me a line on any platform :)</p>
+                 <div class = "row">
+                   <div class = "col-md-6" id = "left">
+                     <p style="text-align: center">Email</p>
+                     <form>
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="eg. John Doe">
+                      </div>
+                      <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="eg. john@doe.com">
+                      </div>
+                      <div class="form-group">
+                        <label>Body</label>
+                      <textarea class="form-control" id="textarea" rows="3"></textarea>
+                      </div>
 
- </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                   </div>
 
-  <!-- Portfolio -->
- <div class = "row" id = "page2">
-   <a id = "portfolio"></a>
-   <h1>Portfolio</h1>
-   <div class = "row">
-   <div class = "col-md-4">
-   <div class="card-container">
-          <div class="card">
-            <div class="side">
-              <img id="pic1" src="images/ruby-on-rails-logo.jpg">
-            </div>
-            <div class="side back">
-              <div class="card-header">Makazi</div>
-              <p style="color: aliceblue">Makazi is an application built on the Ruby on Rails framework.<br>
-              <a href="http://makazi.herokuapp.com">View Website</a>
-              </p>
-            </div>
+                   <div class = "col-md-6">
+                      <p style="text-align: center">Social Sites</p>
+                       <a href="https://github.com/njerrywerry"><img id="git" src = "images/github.jpg"</a>
+                   </div>
+              </div>
+          </li>
+        </ul>
           </div>
-       </div>
-     </div>
-
-    <div class = "col-md-4">
-   <div class="card-container">
-      <div class="card">
-        <div class="side">
-          <img id="pic1" src="images/html.png">
-        </div>
-        <div class="side back">
-          <div class="card-header">Personal Website</div>
-          <p style="color: aliceblue">My personal website built using HTML5, CSS3 and JQuery, a Javascript library.<br>
-          <a href="http://njerrywerry.github.io">View Website</a>
-          </p>
-        </div>
       </div>
-    </div>
   </div>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.accordion.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
 
-  <div class = "col-md-4">
- <div class="card-container">
-    <div class="card">
-      <div class="side">
-        <img id="pic1" src="images/ruby-on-rail.png">
-      </div>
-      <div class="side back">
-        <div class="card-header">My Two Cents</div>
-        <p style="color: aliceblue">A blogging platform built using Ruby on Rails.<br>
-        <a href="http://maneno.herokuapp.com/">View Website</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+				$('#st-accordion').accordion({
+					oneOpenedItem	: true
+				});
 
-<div style = "padding-top: 30px" class = "row">
-<div class = "col-md-4">
-  <div class="card-container">
-     <div class="card">
-       <div class="side">
-         <img id="pic1" src="images/android.png">
-       </div>
-       <div class="side back">
-         <div class="card-header">Story Time</div>
-         <p style="color: aliceblue">An Andriod shortstories application created as part of a group assignment.<br>
-         <a href="https://play.google.com/store/apps/details?id=com.alienske.short_stories&hl=en">View Application</a>
-         </p>
-       </div>
-     </div>
-   </div>
-</div>
-</div>
-
- </div>
-
-  <!-- Resume -->
- <div class = "row" id = "page3">
-   <a id = "resume"></a>
-   <h1 style = "color: black">Resume</h1>
- </div>
-
-  <!--Contact -->
- <div class = "row" id = "page4">
-   <a id = "contact"></a>
-   <h1>Contact Me</h1>
-   <p style = "text-align: center; color: aliceblue">Drop me a line on any platform :)</p>
-   <div class = "row">
-     <div class = "col-md-6">
-       <p style="text-align: center; color: aliceblue">Email</p>
-       <form>
-    <div class="form-group">
-      <label style = "color: aliceblue">Name</label>
-      <input type="text" class="form-control" id="name" placeholder="eg. John Doe">
-    </div>
-    <div class="form-group">
-      <label style = "color: aliceblue">Email Address</label>
-      <input type="email" class="form-control" id="email" placeholder="eg. john@doe.com">
-    </div>
-    <div class="form-group">
-      <label style = "color: aliceblue">Body</label>
-    <textarea class="form-control" id="textarea" rows="3"></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-     </div>
-
-     <div class = "col-md-6">
-        <p style="text-align: center; color: aliceblue">Social Sites</p>
-         <a href="https://github.com/njerrywerry"><img id="git" src = "images/github.jpg"</a>
-     </div>
-   </div>
-
- </div>
-
- </div>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
- <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
-
-    <!--scrolling effect -->
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-  <script type="text/javascript">
-  $(document).ready(function(){
-                  $(".contactLink").click(function(){
-                      if ($("#contactForm").is(":hidden")){
-                          $("#contactForm").slideDown("slow");
-                      }
-                      else{
-                          $("#contactForm").slideUp("slow");
-                      }
-                  });
-              });
-              function closeForm(){
-                  $("#messageSent").show("slow");
-                  setTimeout('$("#messageSent").hide();$("#contactForm").slideUp("slow")', 2000);
-             }
-
-  $(document).ready(function() {
-    function filterPath(string) {
-      return string
-        .replace(/^\//,'')
-        .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-        .replace(/\/$/,'');
-    }
-    $('a[href*=#]').each(function() {
-      if ( filterPath(location.pathname) == filterPath(this.pathname)
-      && location.hostname == this.hostname
-      && this.hash.replace(/#/,'') ) {
-        var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-        var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-         if ($target) {
-           var targetOffset = $target.offset().top;
-           $(this).click(function() {
-             $('html, body').animate({scrollTop: targetOffset}, 1000);
-             var d = document.createElement("div");
-          d.style.height = "101%";
-          d.style.overflow = "hidden";
-          document.body.appendChild(d);
-          window.scrollTo(0,scrollToM);
-          setTimeout(function() {
-          d.parentNode.removeChild(d);
-              }, 10);
-             return false;
-           });
-        }
-      }
-    });
-  });
-  /*! Smooth Scroll - v1.4.5 - 2012-07-22
-  * Copyright (c) 2012 Karl Swedberg; Licensed MIT, GPL */
-  </script>
+            });
+        </script>
   </body>
 </html>
