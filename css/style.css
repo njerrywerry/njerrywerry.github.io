@@ -166,3 +166,10 @@ ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,p,blockquote,fieldset,input{
   #rails:hover div.top { z-index:997; background-color:#3f1150; margin-left:360px; }
   #rails:hover div.bottom { z-index:996; background-color:#340e43; width:400px;
     background:-moz-linear-gradient(-90deg, #340e43, #1a0721); background:-webkit-gradient(linear, 0 top, 0 bottom, from(#340e43), to(#1a0721)); }
+
+#page1 p {
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bolder;
+	color: aliceblue;
+}
