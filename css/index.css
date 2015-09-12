@@ -3,22 +3,6 @@ color: aliceblue;
 text-align: center;
 }
 
-#page1 {
-  background-color: lightgrey;
-}
-
-#page2 {
-  background: url("images/headphones-690685_1280.jpg");
-}
-
-#page3 {
-  background-color: lightgrey;
-}
-
-#page4 {
-  background: url("images/old-books-436498_1280.jpg");
-}
-
 .card-container {
   height: 300px;
   perspective: 600;
