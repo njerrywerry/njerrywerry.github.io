@@ -1,4 +1,4 @@
 
-#Personal website
+#Personal Portfolio
 
-My personal website built with HTML5, CSS3 and Javascript/JQuery.
+My personal portfolio built with HTML5, CSS3 and Javascript/JQuery.
